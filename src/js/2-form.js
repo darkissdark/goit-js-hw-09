@@ -1,5 +1,3 @@
-'use strict';
-
 const formData = { email: '', message: '' };
 const form = document.querySelector('.feedback-form');
 const submitButton = document.querySelector('button[type="submit"]');
