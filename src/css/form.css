@@ -15,14 +15,21 @@ body{
     margin: 0 auto;
 }
 
+input, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+
 input, textarea {
     width: 100%;
-    padding: 8px 16px;
+    padding: 7px 16px;
     border: 1px solid #808080;
     border-radius: 4px;
     margin: 8px 0;
-    min-height: 40px;
     transition: border-color 0.3s ease;
+    color: inherit
 }
 
 input:hover,
@@ -50,10 +57,6 @@ button {
     border: 0;
     cursor: pointer;
     border-radius: 4px;
-    letter-spacing: inherit;
-    line-height: inherit;
-    font-family: inherit;
-    font-size: inherit;
     margin-top: 8px;
     transition: background-color 0.3s ease;
 }
