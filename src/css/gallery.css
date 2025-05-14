@@ -29,6 +29,10 @@ body {
     will-change: transform;
 }
 
+.error-image{
+    object-fit: contain;
+}
+
 .gallery-image:hover {
     transform: scale(1.04445);
     cursor: zoom-in;

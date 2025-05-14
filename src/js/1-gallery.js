@@ -73,10 +73,20 @@ const galleryMarkup = createGalleryMarkup(images);
 
 if (gallery) {
   gallery.innerHTML = galleryMarkup;
+
+  gallery.addEventListener(
+    'error',
+    event => {
+      if (event.target.tagName === 'IMG') {
+        event.target.src = './img/no-image.svg';
+        event.target.classList.add('error-image');
+      }
+    },
+    true
+  );
 }
 
 const lightbox = new SimpleLightbox('.gallery a', {
-  captions: true,
   captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,
