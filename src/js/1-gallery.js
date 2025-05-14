@@ -70,9 +70,12 @@ const images = [
 const gallery = document.querySelector('.gallery');
 
 const galleryMarkup = createGalleryMarkup(images);
-gallery.innerHTML = galleryMarkup;
 
-const lightbox = new SimpleLightbox('.gallery-link', {
+if (gallery) {
+  gallery.innerHTML = galleryMarkup;
+}
+
+const lightbox = new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
   captionPosition: 'bottom',
